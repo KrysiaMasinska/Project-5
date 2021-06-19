@@ -1,10 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Big Shoulders Stencil Display', cursive;
     background-color: #333;
+    font-size: 1.6rem;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+nav {
+    position: absolute;
+    height: 100vh;
+    width: 350px;
+    left:-350px;
+    background: rgb(50, 51, 61);
+    background: linear-gradient(225deg, rgba(50, 51, 61, 1) 13%, rgba(145, 144, 159, 1) 100%, rgba(51, 51, 54, 1) 100%);
+    transition: transform .3;
+}
+
+nav ul{
+    margin-top:50px;
+    list-style: none;
+}
+
+nav a{
+    display: block;
+    padding: 1em 3em;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+.burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: transform .3s;
+}
+
+.active {
+    transform: translateX(350px)
+}
+
+.hide {
+    display: none;
 }
