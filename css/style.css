@@ -27,11 +27,11 @@ h1{
 nav {
     position: absolute;
     height: 100vh;
-    width: 350px;
-    left:-350px;
+    width: 250px;
+    left:-250px;
     background: rgb(50, 51, 61);
     background: linear-gradient(225deg, rgba(50, 51, 61, 1) 13%, rgba(145, 144, 159, 1) 100%, rgba(51, 51, 54, 1) 100%);
-    transition: transform .3;
+    transition: transform .3s;
 }
 
 nav ul{
@@ -65,7 +65,7 @@ nav a:hover{
 }
 
 .active {
-    transform: translateX(350px)
+    transform: translateX(250px)
 }
 
 .hide {
